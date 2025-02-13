@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Discussion Portal</h1>
+    </header>
+
+    <section>
+        <div id="container">
+
+            <div id="left-pane">
+                <div class="top-section">
+                    <button type="button" id="button2">New Question Form</button>
+                    <input type="text" placeholder="Search questions..." id="search">
+                </div>
+                <div id="question-list"></div>
+            </div>
+
+
+            <div id="right-pane">
+                <div id="welcom">
+                    <div class="poratl">
+                        <h2>Welcome to Discussion Portal!</h2>
+                    </div>
+                    <div class="start">
+                        <p>Enter a Subject and Question to get started</p>
+                    </div>
+
+                    <input type="text" id="subject" placeholder="Subject">
+                    <textarea id="textarea" placeholder="Question"></textarea>
+                    <button type="submit" id="button1">Submit</button>
+                </div>
+                <div id="discussion" class="hidden">
+                    <h3>Question</h3>
+                    <div class="rightpanelclass">
+                        <h2 id="Question-title"></h2>
+                        <p id="Question-description"></p>
+                    </div>
+
+                    <button id="resolve-btn">Resolve</button>
+                    <h3 id="mergin">Responses</h3>
+                    <div id="responses"></div>
+                    <h4 id="fill">Add Response</h4>
+                    <input type="text" id="name" placeholder="Enter your Name:"><br>
+                    <textarea placeholder="Enter Commment" id="comment"></textarea><br>
+                    <button id="submitResponse">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
